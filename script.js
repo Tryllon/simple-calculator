@@ -96,10 +96,10 @@ const initCalculator = function () {
             else if (value === '%') {
                 if (lastOperator === '=') {
                     console.log(result)
-                    result = ((result / 100) * result)
+                    result = ((result / 100) * result).toFixed(1)
                     console.log(result)
                 } else {
-                    result = ((result / 100) * firstNumber)
+                    result = ((result / 100) * firstNumber).toFixed(1)
                 }
             }
             else {
