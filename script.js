@@ -52,7 +52,7 @@ const initCalculator = function () {
 
         let value = e.target.value
 
-        if (lastOperator === '=' && value === '+' || value === '-' || value === '*' || value === '/') {
+        if ((lastOperator === '=') && (value === '+' || value === '-' || value === '*' || value === '/')) {
             result = result
             choseOperator = value
             lastOperator = ''
